@@ -10,7 +10,11 @@
 <body>
     <div class="container">
         <div class="quiz-box">
-            <div class="timer">剩餘時間：<span id="time">15</span>秒</div>
+            <div class="quiz-header">
+                <div class="timer">剩餘時間：<span id="time">15</span>秒</div>
+                <div class="progress">題目：<span id="current-question">1</span>/10</div>
+                <div class="score">分數：<span id="score">0</span></div>
+            </div>
             <div class="word-section">
                 <h2 id="current-word">Ready</h2>
                 <button id="speak-btn" class="speak-btn">
@@ -25,6 +29,7 @@
             </div>
             <div class="result" id="result"></div>
             <button id="start-btn" class="start-btn">開始測驗</button>
+            <div id="quiz-summary" class="quiz-summary"></div>
         </div>
     </div>
     <script src="words.js"></script>
